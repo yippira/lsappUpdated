@@ -26,3 +26,7 @@ Route::resource('posts','PostsController'); //first argument decides the "reques
 //Route::get('/', function () {
   //  return view('welcome');
 //});
+Route::get('/dashboard', 'DashboardController@index');
+
+Auth::routes();
+
